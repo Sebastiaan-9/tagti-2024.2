@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<h1>Contatos</h1>
+<ul>
+    {% for contatos in contatos %}
+        <li>{{ contatos.email }}</li>
+        <li>{{ contatos.telefone }}</li>
+      {% endfor %}
+ </ul>
+{% endblock %}

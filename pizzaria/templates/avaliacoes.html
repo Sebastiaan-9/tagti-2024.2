@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<h1>Avaliações</h1>
+<ul>
+    {% for avaliacoes in avaliacoes %}
+        <li>{{ avaliacoes.nome }} - {{ avaliacoes.avaliacao }} </li>
+        <li>{{ avaliacoes.pizza }} - {{ avaliacoes.data }}</li>
+        <li>{{ avaliacoes.comentario }}</li>
+        </br>
+      {% endfor %}
+ </ul>
+{% endblock %}
